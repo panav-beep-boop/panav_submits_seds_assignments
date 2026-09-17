@@ -1,10 +1,7 @@
+WEEK 1
+**IN main4.py there's a comment, "READ HERE!!", for your reference, which is the entire chunk of the code i actually wrote by myself in the template.**
 
-**IN main4.py THERES A COMMENT, READ HERE!! for your reference which is the entire chunk of the code i actually wrote by myself in the template.**
-
-- WEEK 1:
-Question 1: A fast enough ball can end up outside the arena without the wall bounce ever
-being detected. Why doesthe detection fail, and which of Δt, |v|, ρ, R and g decide whether
-it happens?
+Question 1: A fast enough ball can end up outside the arena without the wall bounce ever being detected. Why does the detection fail, and which of Δt, |v|, ρ, R and g decide whether it happens?
 
 Answer 1: let's take checking for collision with wall as code block C, and parameters(velocity, positions etc) update as P.
 
@@ -18,10 +15,7 @@ so dt is clearly at fault. to be precise, |v|dt since we're considering the dist
 
 
 
-Question 2: Set ew = 1, so that no energy is lost at a bounce, and let the ball run for a
-few thousand steps. Does the peak height stay put, creep upward, or decay? Gravity and the
-bounce rule are the only things acting, so if it changes at all, where is that energy coming
-from?
+Question 2: Set ew = 1, so that no energy is lost at a bounce, and let the ball run for a few thousand steps. Does the peak height stay put, creep upward, or decay? Gravity and the bounce rule are the only things acting, so if it changes at all, where is that energy coming from?
 
 Answer 2:
 for reference, i did this at fps=600 so dt=1.67 ms approximately. the peak height decays eventually, the ball comes down to the bottom of the circular arena and just slides around.
