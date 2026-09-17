@@ -1,6 +1,6 @@
-TWO IMP THINGS:
+**TWO IMP THINGS:
 -PLEASE ONLY SEE main4.py, that is the latest version of the code. the rest are prototypes for my own reference.
--IN main4.py THERES A COMMENT, READ HERE!! for your reference which is the entire chunk of the code i actually wrote by myself in the template.
+-IN main4.py THERES A COMMENT, READ HERE!! for your reference which is the entire chunk of the code i actually wrote by myself in the template.**
 
 - WEEK 1:
 Question 1: A fast enough ball can end up outside the arena without the wall bounce ever
