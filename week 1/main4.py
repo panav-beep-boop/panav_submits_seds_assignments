@@ -12,7 +12,7 @@ BOWL_CENTER = np.array([WIDTH / 2, HEIGHT / 2], dtype=float)
 BOWL_RADIUS = 300
 
 # Start with 1 ball, then 2. Many at once is the bonus.
-NUM_PARTICLES = 45
+NUM_PARTICLES = 60
 PARTICLE_RADIUS = 12
 PARTICLE_SPEED = random.uniform(0,300)
 
@@ -73,6 +73,7 @@ while running:
     dt = clock.tick(FPS) / 1000.0
 
 
+# READ THIS!!!
     for i in range(NUM_PARTICLES):
 
         d1=positions[i]-BOWL_CENTER
@@ -92,9 +93,9 @@ while running:
             velocities[i] = a - (1 + WALL_RESTITUTION) * v_normal * np.array([nx, ny])
             positions[i]=positions[i]-offset*d1/d
 
-        else:
-            velocities[i]=velocities[i]+GRAVITY*dt
-            positions[i]=positions[i]+velocities[i]*dt
+        
+        velocities[i]=velocities[i]+GRAVITY*dt
+        positions[i]=positions[i]+velocities[i]*dt
 
         
             
