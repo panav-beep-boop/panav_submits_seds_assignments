@@ -1,5 +1,4 @@
 WEEK 1
-**IN main4.py there's a comment, "READ HERE!!", for your reference, which is the entire chunk of the code i actually wrote by myself in the template.**
 
 Question 1: A fast enough ball can end up outside the arena without the wall bounce ever being detected. Why does the detection fail, and which of Δt, |v|, ρ, R and g decide whether it happens?
 
