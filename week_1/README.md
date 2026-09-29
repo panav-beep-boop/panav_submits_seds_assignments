@@ -1,4 +1,4 @@
-WEEK 1:
+# Week 1: Rigid Balls, Round Walls
 
 Question 1: A fast enough ball can end up outside the arena without the wall bounce ever being detected. Why does the detection fail, and which of Δt, |v|, ρ, R and g decide whether it happens?
 
