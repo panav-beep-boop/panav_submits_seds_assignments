@@ -1,20 +1,12 @@
 # Week 3 — Absolute Radiance
 
-    Raytracing with reflections and diffusion.
+   Question 1. In the ray_color loop, you must ensure rays do not intersect at exactly t = 0.0,
+but rather at a small offset like t = 0.001. If we set the minimum distance to 0.0, the image
+becomes covered in dark noise known as "shadow acne." Why does this happen? (Hint: Think
+about floating-point rounding errors when a ray bounces off a surface).
 
-- **Spec:** [`week3.pdf`](./week3.pdf) — read it first, it is the authority.
-- **Template:** [`main.py`](./main.py) — runs as-is, sets and integrates shader into main.py.
-- **Template:** [`shader.frag`](./shader.frag) - basic seleton is provided, your task is to fill the missing logic
 
-  Three `TODO` blocks: Ray-Sphere Intersection, tracking the closest hit, and material properties.
-
-- **Setup:** see the [root README](../README.md).
-
-**Due: EOD, 30th September 2026.**
-
-## Your brief goes here
-
-**Replace this file with your assignment brief.** It must contain your answers to
-**Question 1** and **Question 2**.
-
-Half a page is plenty.
+Question 2. In many CPU implementations of raytracing, the ray_color function calls
+itself recursively every time it hits an object to calculate the next bounce. In our GLSL
+fragment shader, we use a for loop instead. Why can’t we use standard recursive function
+calls inside a GPU shader?
