@@ -24,4 +24,5 @@ Case 1). I only update parameters if the ball isn't colliding/already out of the
 Case 2). Parameter update is unconditional. In this case, the peak height creeps upward until the ball starts oscillating violently diametrically. 
 
 in both cases, the error accumulation is due to discrete deviations of simulated vs theoretical energy. in case 1). energy deviates negatively and in 2). energy deviates positively. deviation in energy is caused by deviation in velocity, which occurs because we're calculating velocity discretely, not continuously. 
+p.s. im still trying to figure out why this exactly happens; i'll probably do it in a mathematically rigorous way later.
 
