@@ -14,6 +14,10 @@ so dt is clearly at fault. to be precise, |v|dt since we're considering the dist
 
 
 
+
+
+
+
 Question 2: Set ew = 1, so that no energy is lost at a bounce, and let the ball run for a few thousand steps. Does the peak height stay put, creep upward, or decay? Gravity and the bounce rule are the only things acting, so if it changes at all, where is that energy coming from?
 
 Answer 2:
