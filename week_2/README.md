@@ -3,6 +3,8 @@
 Question 1. Why does the swap grid start as a copy of the current state, rather than being
 filled with zeros? What would happen to a grain that does not move if G′ started empty
 
+Because we want to copy the previous grid and only check for potential updates in it. If we start with all zeros, the grain that doesn't move will disappear completely from the program.
+
 Question 2. Remove the randomised column order and replace it with a fixed left-to-right
 scan. Run the simulation for a few hundred ticks. What happens to the shape of a sand pile?
 Why?
